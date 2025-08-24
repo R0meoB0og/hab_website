@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 5%;
+    background: rgb(255, 255, 255);
+    overflow-y: scroll;
+    font-family: Arial Light;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.carousel {
+    position: relative;
+    height: 328px;
+    width: 328px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+} 
+
+.wrapper {
+    display: flex;
+    transform: translateX(0);
+    transition: all 0.5s ease-in-out;
+}
+
+.wrapper img {
+   width: 328px;
+   height: 328px;
+   object-fit: cover;
+}
+
+
+.buttons {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 8px;
+}
+
+button {
+    background: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    height: 100%;
+    border-radius: 10px;
+    transition: all 0.5s ease-out;
+    background: rgba(179, 179, 179, 0.1);
+}
+
+button i {
+    font-size: 2rem;
+}
+
+button:hover {
+    background: rgba(179, 179, 179, 0.4);
+}
+
+.row-container {
+    position: relative;
+    display: flex;  
+    flex-direction: row;
+    gap: 100px;
+}
+
+.about {
+    position: relative;
+    text-align: center;
+}
+
+.filters {
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+
+.filter-buttons {
+    padding: 10px;
+    background-color: rgb(28, 115, 120);
+    color: white;
+    text-underline-offset: 20px;
+    transition: all 0.5s ease-out;
+}
+
+.filter-buttons:hover {
+    background-color: rgb(57, 160, 165);
+}
+
+object {
+    height: 100vh;
+    width: 80vw;
+}
