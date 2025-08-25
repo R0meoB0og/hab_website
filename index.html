@@ -88,10 +88,14 @@
 
         <label id="lakeLabel">Lake Okeechobee 2022</label>
         <br />
-        <div class="about">The model used to generate the predictions above was trained
-            on Sentinel 3 OLCI images of Lake Okeechobee in 2021. Its performance
-            is satisfactory for new images of Lake Okeechobee in 2022, though it 
-            struggles to accurately predict HABs for images of Sanigaw Bay in 2025. 
+        <div class="about">
+            The first image shown is the original natural color image. Second is the label, 
+            which labels in white pixels of the original image that display HABs. Last, the 
+            model generates a prediction, without knowing the label, for which pixels of the
+            original image correspond to HABs. The U-Net model used to generate the predictions 
+            above was trained on Sentinel 3 OLCI images of Lake Okeechobee in 2021. Its performance
+            is satisfactory for new images of Lake Okeechobee in 2022, though it struggles to 
+            accurately predict HABs for images of Sanigaw Bay in 2025. 
         </div>
 
         <br />
@@ -144,4 +148,5 @@
         </script>
     </body> 
 </html>
+
 
